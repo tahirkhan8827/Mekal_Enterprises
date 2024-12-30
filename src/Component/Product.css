@@ -1,0 +1,107 @@
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-block: 30px;
+}
+.card:hover{
+    box-shadow: 0 0 9px var(--black-color) ;
+    animation: pop-up 2s ease;
+
+}
+
+.item-price,.item-title{
+    color: var(--black-color);
+}
+   
+.card{
+    border: 1px solid var(--black-color) !important;
+    overflow: hidden;
+    width: 25%;
+    border-radius: 15px;
+    background: var(--white) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 5px;
+    position: relative;
+}
+@keyframes pop-up {
+    from {
+      scale: 1;
+    }
+    50%{
+        scale: 1.1;
+    }
+    to {
+        scale: 1;
+    }
+  }
+
+
+.card img{
+    border-radius: 5px;
+    width: 100%;
+}
+.add-to-cart{
+    width: 100%;
+    padding: 13px 20px;
+    background: var(--addtocart);
+    color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 20px;
+}
+.add-to-cart:hover{
+    background: var(--addtocart-hover);
+}
+
+
+@media (max-width: 1075px){
+    .card{
+        width: 30%;
+    }
+    .card h3{
+        font-size: 1.2rem;
+    }
+    .card p{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 768px){
+    .cards{
+        gap: 30px;
+        justify-content: center;
+    }
+    .card{
+        width: 45%;
+        height: 100%;
+        
+    }
+    .item-details{
+        
+        width: 100%;
+    }
+    .card h3{
+        font-size: 1.1rem;
+    }
+    .card p{
+        font-size: .8rem;
+    }
+}
+@media (max-width: 697px){
+    .cards{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .card{
+        width: 80%;
+    }
+    .card h3{
+        font-size: 1.5rem;
+    }
+}
