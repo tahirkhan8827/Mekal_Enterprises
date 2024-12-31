@@ -1,14 +1,11 @@
 {
-  "homepage": "https://tahirkhan8827.github.io/Mekal_Enterprises",
-  "name": "Mekal_Enterprises",
+  "name": "e-commerce",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
